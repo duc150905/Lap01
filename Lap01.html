@@ -9,18 +9,14 @@
 
 <body>
     <script>
-        var Mmass = 78;
-        var Mheight = 1.69;
-        var Jmass = 92;
-        var Jheight = 1.95;
-        var MMBI = Mmass / Math.pow(Mheight, 2);
-        var JMBI = Jmass / Math.pow(Jheight, 2);
-        var markHigherBMI = MMBI > JMBI;
-        console.log(MMBI);
-        console.log(JMBI);
-        console.log(markHigherBMI);
-        if (markHigherBMI) console.log("Mark's BMI " + MMBI + " is higher than John's " + JMBI);
-        else console.log("John's BMI " + JMBI + " is higher than Mark's " + MMBI);
+        var Dolphins = (96 + 108 + 89) / 3;
+        var Koalas = (88 + 91 + 110) / 3;
+        console.log(Dolphins);
+        console.log(Koalas);
+        if (Dolphins > Koalas && Dolphins >= 100) console.log("Dolphins win");
+        else if (Dolphins < Koalas && Koalas >= 100) console.log("Koalas win");
+        else if (Dolphins == Koalas && Dolphins >= 100 && Koalas >= 100) console.log("two team draw");
+        else console.log("no team win");
     </script>
 </body>
 
